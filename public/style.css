@@ -1,0 +1,75 @@
+
+@media (min-width: 320px) and (max-width: 480px){
+    *{
+       box-sizing: border-box;
+       margin: 0;
+   }
+   /*body{
+       background-color: maroon;
+   } */
+   /* } */
+   header{
+       background-color: maroon;
+   }
+   .burgerMenu{
+       width: 35px;
+       height: 5px;
+       background-color: black;
+       margin: 6px 0;
+   }
+   header nav{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: space-between;
+       padding: 0 25px;
+   }
+   #radioDiv{
+       display: flex;
+   }
+   #searchForm{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       align-content: space-around;
+   }
+   #searchText{
+       height: 50px;
+       align-self: center;
+       width: 300px;
+       margin-top: 39%;
+       font-size: 150%;
+   }
+   #searchDiv{
+   
+   }
+   .btnRadio{
+       border: 1px solid black;
+       background: gray;
+       width: 50%;
+       margin: 2PX;
+   }
+   .btnRadio input{
+       margin: 0px 16px;
+       margin-top: 10px;
+   }
+   button{
+       width: 150px;
+       height: 50px;
+       align-self: center;
+       margin-top: 20px;
+   }
+   #indexH1{
+       background-color: #454545;
+       text-align: center;
+       color: white;
+   }
+   #mainWraper{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-content: space-between;
+   }
+   }
