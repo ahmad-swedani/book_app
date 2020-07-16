@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>best Book</h1>
+                <section>
+                    <div class="burgerMenu"></div>
+                    <div class="burgerMenu"></div>
+                    <div class="burgerMenu"></div>
+                </section>
+            </nav>
+        </header>
+        <main>
+                <div id="mainWraper">
+                    <% booksResult.forEach (book => {  %>
+                        <section class="bookSec">
+                            <img class="bookCover" src="<%= book.bookImage %>" alt="">
+                            <h2 class="bookTitle"><%= book.bookName %></h2>
+                            <p class="bookAuthor"><%= book.bookAuthor %></p>
+                            <textarea class="desc"><%= book.bookDesc %></textarea>
+                        </section>
+                    <% }) %>
+                </div>
+        </main>
+        <footer></footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="/app.js"></script>
+    </body>
+</html>
