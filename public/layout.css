@@ -1,0 +1,111 @@
+@media (min-width: 320px) and (max-width: 480px){
+    #radioDiv{
+        display: flex;
+    }
+    #searchForm{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    #searchText{
+        height: 50px;
+        align-self: center;
+        width: 300px;
+        margin-top: 39%;
+        font-size: 150%;
+    }
+    #searchDiv{
+    
+    }
+    .btnRadio{
+        border: 1px solid black;
+        background: gray;
+        width: 50%;
+        margin: 2PX;
+    }
+    .btnRadio input{
+        margin: 0px 16px;
+        margin-top: 10px;
+    }
+    #btnSearch{
+        width: 150px;
+        height: 50px;
+        align-self: center;
+        margin-top: 20px;
+    }
+    #indexH1{
+        background-color: #454545;
+        text-align: center;
+        color: white;
+    }
+    #mainWraper{
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .btnSelect{
+        display: block;
+        width: 30%;
+        align-self: center;
+        height: 40px;
+    }
+    .catigoryText{
+    }
+    .urlText{
+        display: none;
+    }
+    .btnSave{
+    display: none;
+    }
+    .bookDtl{
+        margin: 5px;
+        height: 30px;
+        width: 75%;
+    }
+    .bookDtlForm input{
+        display: none;
+    }
+    .bookDtlForm{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+    .bookSec{
+        text-align: center;
+        border: 1px solid black;
+        margin: 8% 8%;
+        line-height: 45px;
+    }
+    .bookCover{
+        width: 60%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .bookTitle{
+    color: #95bbdc;
+    }
+    .bookAuthor{
+        color: black;
+    }
+    .desc{
+        color: black;
+        width: 80%;
+        height: 175px;
+        margin-bottom: 20px;
+        background-color: #95bbdc6e;
+        border: none;
+    }
+    .bookSec a{
+        display: block;
+    }
+
+}
