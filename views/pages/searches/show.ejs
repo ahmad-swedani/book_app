@@ -9,14 +9,20 @@
     <body>
         <header>
             <nav>
-                <h1>best Book</h1>
-                <section>
-                    <div class="burgerMenu"></div>
-                    <div class="burgerMenu"></div>
-                    <div class="burgerMenu"></div>
+                <section class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </section>
+                <h1>best Book</h1>
             </nav>
         </header>
+        <div id="menu">
+            <ul>
+                <li class="options"><a href="/">Home</a></li>
+                <li class="options"><a href="/search/new">Search</a></li>
+            </ul>
+        </div>
         <main>
                 <div id="mainWraper">
                     <% booksResult.forEach (book => {  %>
@@ -26,11 +32,20 @@
                             <p class="bookAuthor"><%= book.bookAuthor %></p>
                             <textarea class="desc"><%= book.bookDesc %></textarea>
                         </section>
+                        <form class="bookDtlForm" action="/book" method="post">
+                            <input type="text" name="bookimage" class="bookDtl" value="<%= book.bookImage %>" class="urlText">
+                            <input type="text" name="bookname" class="bookDtl" value="<%= book.bookName %>">
+                            <input type="text" name="bookauthor" class="bookDtl" value="<%= book.bookAuthor %>">
+                            <input type="text" name="bookdesc" class="bookDtl" value="<%= book.bookDesc %>">
+                            <input type="text" name="bookcat" class="bookDtl" value="" class="catigoryText">
+                            <button class="btnSave" type="submit">Save</button>
+                            <button class="btnSelect">Select</button>
+                        </form>
                     <% }) %>
                 </div>
         </main>
         <footer></footer>
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="/app.js"></script>
+        <script src="/js/app.js"></script>
     </body>
 </html>

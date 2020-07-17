@@ -9,14 +9,76 @@
    } */
    /* } */
    header{
-       background-color: maroon;
+       background-color: #95bbdc;
    }
-   .burgerMenu{
+   body{
+       background-color: #fff;
+   }
+   /*********************************************/
+   .container {
+       display: inline-block;
+       cursor: pointer;
+     }
+     
+     .bar1, .bar2, .bar3 {
        width: 35px;
        height: 5px;
-       background-color: black;
+       background-color: white;
        margin: 6px 0;
+       transition: 0.4s;
+     }
+     
+     .change .bar1 {
+       -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+       transform: rotate(-45deg) translate(-9px, 6px);
+     }
+     
+     .change .bar2 {opacity: 0;}
+     
+     .change .bar3 {
+       -webkit-transform: rotate(45deg) translate(-8px, -8px);
+       transform: rotate(45deg) translate(-8px, -8px);
+     }
+     .change #minu{
+         /* display: none; */
+     }
+   
+     /* here we go */
+     #menu{
+       background-color: maroon;
+       width: 0%;
+       position: absolute;
    }
+   
+     #menu ul li{
+         position: relative;
+       width: fit-content;
+       margin: 20px -2px;
+       list-style: none;
+       display: none;
+     }
+     #menu ul li a{
+         text-decoration: none;
+         /* color: white; */
+         color: black;
+     }
+     @keyframes in {
+       0% {
+         width: 0%;
+       }
+       100% {
+         width: 23%;
+       }
+     }
+     @keyframes out {
+       0% {
+           width: 23%;
+         }
+         100% {
+           width: 0%;
+         }
+     }
+     /*******************************/
    header nav{
        display: flex;
        flex-direction: row;
@@ -54,7 +116,7 @@
        margin: 0px 16px;
        margin-top: 10px;
    }
-   button{
+   #btnSearch{
        width: 150px;
        height: 50px;
        align-self: center;
@@ -66,10 +128,75 @@
        color: white;
    }
    #mainWraper{
+       /* display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-content: space-between; */
        display: flex;
        flex-direction: column;
        flex-wrap: wrap;
        justify-content: center;
-       align-content: space-between;
+   }
+   /**********************************************/
+   .btnSelect{
+       display: block;
+       width: 30%;
+       align-self: center;
+       height: 40px;
+   }
+   .catigoryText{
+   }
+   .urlText{
+       display: none;
+   }
+   .btnSave{
+   display: none;
+   }
+   .bookDtl{
+       margin: 5px;
+       height: 30px;
+       width: 75%;
+   }
+   .bookDtlForm input{
+       display: none;
+   }
+   .bookDtlForm{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-content: space-evenly;
+   }
+   /************************************************/
+   .bookSec{
+       text-align: center;
+       border: 1px solid black;
+       margin: 8% 8%;
+       line-height: 45px;
+   }
+   .bookCover{
+       width: 60%;
+       height: 300px;
+       margin-top: 20px;
+       box-shadow: 0 5px 20px rgba(0,0,0,.05), 0 5px 20px rgba(0,0,0,.05);
+
+   }
+   .bookTitle{
+   color: #95bbdc;
+   }
+   .bookAuthor{
+       color: black;
+   }
+   .desc{
+       color: black;
+       width: 80%;
+       height: 175px;
+       margin-bottom: 20px;
+       background-color: #95bbdc6e;
+       border: none;
+   }
+   .bookSec a{
+       display: block;
    }
    }
